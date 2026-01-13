@@ -16,7 +16,7 @@ How to check code quality with pycodestyle
 
 # Resources
 
-#Core Reading Materials
+# Core Reading Materials
 
 Whetting Your Appetite - Introduction to Python programming
 
