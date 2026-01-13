@@ -1,4 +1,4 @@
-This repository contains learning materials and exercises focused on fundamental Python programming concepts. Based on the curriculum from the "Learn to Program" series, this project covers essential Python skills for beginners.
+# This repository contains learning materials and exercises focused on fundamental Python programming concepts. Based on the curriculum from the "Learn to Program" series, this project covers essential Python skills for beginners.
 
 # General Concepts
 
