@@ -1,0 +1,42 @@
+Test cases for say_my_name function
+===================================
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test 1: Normal names
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+Test 2: With only first name
+>>> say_my_name("Bob")
+My name is Bob 
+
+Test 3: Another full name
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+Test 4: Error - first_name not string
+>>> say_my_name(12, "White")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+Test 5: Error - last_name not string
+>>> say_my_name("John", 42)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+Test 6: Both names not strings
+>>> say_my_name(12, 42)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+Test 7: Empty strings
+>>> say_my_name("", "")
+My name is  
+
+Test 8: Special characters
+>>> say_my_name("Mohamed", "El-Sharkawy")
+My name is Mohamed El-Sharkawy
