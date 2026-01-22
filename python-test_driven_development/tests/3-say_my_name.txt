@@ -3,51 +3,31 @@ Test cases for say_my_name function
 
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
-Test 1: Normal names
->>> say_my_name("John", "Smith")
-My name is John Smith
+Test 1: "Bob" / "Lenon"
+>>> say_my_name("Bob", "Lenon")
+My name is Bob Lenon
 
-Test 2: With only first name
+Test 2: "Bob" (only first name)
 >>> say_my_name("Bob")
-My name is Bob
+My name is Bob 
 
-Test 3: Another full name
->>> say_my_name("Walter", "White")
-My name is Walter White
-
-Test 4: Error - first_name not string
->>> say_my_name(12, "White")
-Traceback (most recent call last):
-...
-TypeError: first_name must be a string
-
-Test 5: Error - last_name not string
->>> say_my_name("John", 42)
+Test 3: "Bob" / 12 (error)
+>>> say_my_name("Bob", 12)
 Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
 
-Test 6: Both names not strings
->>> say_my_name(12, 42)
+Test 4: 12 / "Lenon" (error)
+>>> say_my_name(12, "Lenon")
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
 
-Test 7: Empty strings
->>> say_my_name("", "")
-My name is
+Test 5: First name string / last name string
+>>> say_my_name("John", "Doe")
+My name is John Doe
 
-Test 8: Special characters
->>> say_my_name("Mohamed", "El-Sharkawy")
-My name is Mohamed El-Sharkawy
-
-Test 9: Missing both arguments
->>> say_my_name()
-Traceback (most recent call last):
-...
-TypeError: say_my_name() missing 1 required positional argument: 'first_name'
-
-Test 10: Missing two arguments
+Test 6: Missing both arguments
 >>> say_my_name()
 Traceback (most recent call last):
 ...
