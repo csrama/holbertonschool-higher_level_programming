@@ -71,11 +71,14 @@ Test 11: Size 3
 ###
 ###
 
-Test 12: Empty line between squares (testing format)
->>> print_square(1)
-#
->>> print()
-<BLANKLINE>
->>> print_square(2)
-##
-##
+Test 12: Missing one argument
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+Test 13: Missing two arguments (not applicable, function only takes one)
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
