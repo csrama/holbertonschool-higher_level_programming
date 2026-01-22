@@ -16,15 +16,13 @@ def say_my_name(first_name, last_name=""):
         TypeError: If first_name or last_name are not strings
     """
     # Check if first_name is a string
-    if type(first_name) is not str:
+    if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
 
     # Check if last_name is a string
-    if type(last_name) is not str:
+    if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
 
-    # Print exactly as in the example (with trailing space when last_name is empty)
-    if last_name:
-        print(f"My name is {first_name} {last_name}")
-    else:
-        print(f"My name is {first_name} ")
+    # Print exactly as in the example
+    # When last_name is empty, still print a space after first_name
+    print("My name is {} {}".format(first_name, last_name))
