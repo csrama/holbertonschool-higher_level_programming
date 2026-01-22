@@ -1,0 +1,81 @@
+Test cases for print_square function
+====================================
+
+>>> print_square = __import__('4-print_square').print_square
+
+Test 1: Size 4
+>>> print_square(4)
+####
+####
+####
+####
+
+Test 2: Size 10
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+Test 3: Size 0 (should print nothing)
+>>> print_square(0)
+
+Test 4: Size 1
+>>> print_square(1)
+#
+
+Test 5: Error - negative size
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+Test 6: Error - size is float
+>>> print_square(4.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+Test 7: Error - size is string
+>>> print_square("4")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+Test 8: Error - size is list
+>>> print_square([1, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+Test 9: Float negative (should be TypeError, not ValueError)
+>>> print_square(-4.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+Test 10: Size 2
+>>> print_square(2)
+##
+##
+
+Test 11: Size 3
+>>> print_square(3)
+###
+###
+###
+
+Test 12: Empty line between squares (testing format)
+>>> print_square(1)
+#
+>>> print()
+<BLANKLINE>
+>>> print_square(2)
+##
+##
