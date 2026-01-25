@@ -1,19 +1,13 @@
-#!/user/bin/python3
-
+#!/usr/bin/python3
+"""
+Square module
+Defines a Square class
 """
 
-square module
 
-defines a square class
-
-"""
-
-class square:
-
+class Square:
     """
-    square class
-    
-    an empty class that represent a square 
-    
+    Square class
+    An empty class that represents a square
     """
     pass
