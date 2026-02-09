@@ -1,5 +1,7 @@
-RESTful API Fundamentals Project
-Introduction
+## RESTful API Fundamentals Project
+
+---
+## Introduction
 
 In the evolving world of software development, understanding how to communicate and transfer data efficiently between systems is essential. This project explores RESTful APIs, a cornerstone of modern web services.
 
@@ -53,15 +55,14 @@ Maintain long-term, well-documented platforms
 
 This project bridges both technical implementation and architectural understanding, ensuring you can design and consume APIs professionally.
 
-REST API Conceptual Architecture
-+-------+           +-------+           +---------+           +---------+
-|       |  Request  |       |  Process  |         |  Fetch/   |         |
-|       |   ----->  |       |  -------> |         |  Modify   |         |
-|       |           |       |           |         |  -------> |         |
-|       | <-----    |       | <-------  |         |           |         |
-|       |  Response |       |  Return   |         |           |         |
-+-------+           +-------+           +---------+           +---------+
-  Client            Web Server           API Server           Database
+flowchart LR
+    Client -->|Request| WebServer
+    WebServer -->|Process| APIServer
+    APIServer -->|Fetch/Modify| Database
+    Database --> APIServer
+    APIServer -->|Return| WebServer
+    WebServer -->|Response| Client
+
 
 Components
 
