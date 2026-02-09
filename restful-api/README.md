@@ -157,5 +157,27 @@ HTTP sends data in plain text, while HTTPS encrypts communication and verifies s
 
 ---
 
-## HTTP Request Structure
+# 1. API Consumption with curl
 
+## Background
+
+curl (Client URL) is a command-line tool that allows users to transfer data to or from a network server using various protocols such as HTTP, HTTPS, and FTP. It is widely used for debugging, testing, and interacting with RESTful APIs. Mastering curl enables developers to quickly prototype API requests, inspect responses, and diagnose server issues directly from the terminal.
+
+---
+
+## Objectives
+
+By completing this task, you will be able to:
+
+- Install and use curl from the command line
+- Construct and execute API requests using curl
+- Interpret responses from RESTful APIs
+
+---
+
+## Installing curl
+
+Check if curl is installed:
+
+```bash
+curl --version
