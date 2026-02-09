@@ -123,3 +123,87 @@ Consume APIs using CLI tools and Python
 Secure endpoints
 
 Document APIs professionally
+
+
+## 0. Basics of HTTP/HTTPS
+Background
+
+The Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the web. It allows clients such as browsers and applications to communicate with servers. HTTPS (HTTP Secure) is the encrypted version of HTTP, using SSL/TLS to protect data from interception and tampering.
+
+Objective
+
+By the end of this task, students should be able to:
+
+Differentiate between HTTP and HTTPS
+
+Understand the structure of HTTP requests and responses
+
+Identify common HTTP methods and status codes
+
+HTTP vs HTTPS
+Feature	HTTP	HTTPS
+Security	No encryption	Encrypted using SSL/TLS
+Port	80	443
+Data Protection	Vulnerable to interception	Protected from eavesdropping
+Use Case	Public content	Sensitive data (logins, payments)
+
+Summary:
+HTTP sends data in plain text, while HTTPS encrypts communication and verifies server identity, ensuring confidentiality and integrity.
+
+HTTP Request Structure
+GET /index.html HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0
+Accept: text/html
+
+(optional body)
+
+
+Components:
+
+Method
+
+Path
+
+Headers
+
+Body (optional)
+
+HTTP Response Structure
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1234
+
+<html>...</html>
+
+
+Components:
+
+Status line
+
+Headers
+
+Body
+
+Common HTTP Methods
+Method	Description	Use Case
+GET	Retrieves data	Fetching a webpage or API data
+POST	Sends data to create a resource	Submitting a form
+PUT	Updates a resource	Updating user information
+DELETE	Removes a resource	Deleting data
+Common HTTP Status Codes
+Code	Meaning	Scenario
+200	OK	Successful request
+201	Created	Resource successfully created
+301	Moved Permanently	URL changed
+404	Not Found	Resource does not exist
+500	Internal Server Error	Server failure
+Key Takeaways
+
+HTTPS encrypts communication while HTTP does not.
+
+HTTP requests contain methods, headers, and optional bodies.
+
+HTTP responses include status codes and response data.
+
+Status codes are grouped into 1xx, 2xx, 3xx, 4xx, and 5xx.
