@@ -55,13 +55,14 @@ Maintain long-term, well-documented platforms
 
 This project bridges both technical implementation and architectural understanding, ensuring you can design and consume APIs professionally.
 
-flowchart LR
-    Client -->|Request| WebServer
-    WebServer -->|Process| APIServer
-    APIServer -->|Fetch/Modify| Database
+graph LR
+    Client[Client] -->|Request| WebServer[Web Server]
+    WebServer -->|Process| APIServer[API Server]
+    APIServer -->|Fetch/Modify| Database[Database]
     Database --> APIServer
     APIServer -->|Return| WebServer
     WebServer -->|Response| Client
+
 
 
 Components
